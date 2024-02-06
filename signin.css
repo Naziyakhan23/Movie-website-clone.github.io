@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'montserrat',sans-serif;
+}
+:root{
+    --black-color:#fff;
+}
+.container{
+    background-image: url("0905a74092fa43fce6218aa48f6a26a4.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 360px;
+    height: 100vh;
+    width: 100%;
+    background-color: #66fcf1;
+    animation: animateBg 4s linear infinite;
+}
+@keyframes animateBg{
+    100%{
+        filter:hue-rotate(360deg);
+    }
+}
+.head{
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 15px;
+    text-align: center;
+    color:var(--black color);
+}
+.input-box{
+    position: relative;
+    width: 300px;
+    margin:30px 0;
+    border-bottom: 1px solid var(--black-color);
+}
+    
+.login-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 400px;
+    background: transparent;
+    position: relative;
+    border:2px solid rgba(255,0,0,0.349);
+    backdrop-filter:blur(15px);
+}
+.input-box label{
+    position: absolute;
+    top:50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    transition: .5s;
+    color:var(--black-color);
+    pointer-events: none;
+}
+.input-box input:focus -label,
+    .input-box input:valid -label{
+        top:-5px;
+    }
+
+.input-box input{
+    width:100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: var(--black-color);
+    padding: 0 35px 0 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    color: var(--black-color);
+    transform: translateY(-50%);
+}
+.remember-forget{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    
+}
+.fp{
+    padding-left: 55px;
+    text-decoration: none;
+}
+.input3{
+    padding-left: 10px;
+}
+
+.btn1{
+    background: transparent;
+    width: 100%;
+    height: 40px;
+    border: 1px dashed aqua;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #66fcf1;
+   cursor: pointer;
+
+}
+.register-link{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.register{
+    font-weight: bold;
+    text-decoration: none;
+}
+.register:hover{
+    text-decoration: underline;
+}
+.fp:hover{
+    text-decoration: underline;
+}
